@@ -35,7 +35,7 @@ In order to execute some commands, the user must enter into a specific device co
 Setup network device credentials under `<switch>`.
 
 ```xml
-<switch name="MLXe" ip="156.56.6.220" ssh_port="22" username="admin" password="admin"
+<switch name="MLXe" ip="192.168.1.10" ssh_port="22" username="admin" password="admin"
         vendor="Brocade" model="MLXe" version="5.8.0" description="brocade">
 ```
 
