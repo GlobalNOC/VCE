@@ -96,3 +96,10 @@ Alias /vce/api /usr/share/vce/www/api
   Options +ExecCGI
 </Location>
 ```
+
+### Users
+Users are managed via htpasswd file. Create the password file `/usr/share/vce/www/.htpasswd` and first user with the following command.
+
+```
+htpasswd -c /usr/share/vce/www/.htpasswd jane
+```
