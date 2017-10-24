@@ -98,7 +98,7 @@ Alias /vce/api /usr/share/vce/www/api
 ```
 
 ### Users
-Users are managed via htpasswd file. Create the password file `/usr/share/vce/www/.htpasswd` and first user with the following command.
+Users are managed via htpasswd file. Create the password file `/usr/share/vce/www/.htpasswd` and first user with the following command. See the htpasswd [documentation](https://httpd.apache.org/docs/current/programs/htpasswd.html) for more information.
 
 ```
 htpasswd -c /usr/share/vce/www/.htpasswd jane
