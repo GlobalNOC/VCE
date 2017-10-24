@@ -32,7 +32,7 @@ In order to execute some commands, the user must enter into a specific device co
 ```
 
 #### Network device credentials
-Setup network device credentials under `<switch>`.
+Setup network device credentials under `<switch>`. **Important:** Each device must expose a port for SSH and allow for netconf connections on port `830`.
 
 ```xml
 <switch name="MLXe" ip="192.168.1.10" ssh_port="22" username="admin" password="admin"
