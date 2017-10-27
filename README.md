@@ -1,6 +1,21 @@
 # VCE
 Virtual Customer Equipment
 
+## Installation
+The following installation assumes a Centos7 machine.
+
+1. Edit `/etc/yum.repos.d/grnoc-public.repo`
+```
+[grnoc-public]
+name=GlobalNOC Public el7 Packages - $basearch
+baseurl=https://repo-public.grnoc.iu.edu/repo/7/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://repo-public.grnoc.iu.edu/repo/RPM-GPG-KEY-GRNOC7
+```
+2. Execute `sudo yum makecache`
+3. Execute `sudo yum install vce`
+
 ## Configuration
 
 ### Access Policy and CLI Commands
