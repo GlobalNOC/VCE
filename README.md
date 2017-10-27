@@ -2,9 +2,9 @@
 Virtual Customer Equipment
 
 ## Installation
-The following installation assumes a Centos7 machine.
+The following installation assumes a Centos7 machine. It also assumes that rabbitmq is installed and running. See [here](https://www.rabbitmq.com/install-rpm.html) for RabbitMQ installation instructions.
 
-1. Edit `/etc/yum.repos.d/grnoc-public.repo`
+1. Edit `/etc/yum.repos.d/grnoc-public.repo` to install the GlobalNOC's Centos7 RPM repository.
 ```
 [grnoc-public]
 name=GlobalNOC Public el7 Packages - $basearch
@@ -15,6 +15,8 @@ gpgkey=https://repo-public.grnoc.iu.edu/repo/RPM-GPG-KEY-GRNOC7
 ```
 2. Execute `sudo yum makecache`
 3. Execute `sudo yum install vce`
+
+Assuming the previous steps finished successfully, VCE is now installed. Continue to the configuration portion of this document to configure network device credentials, rabbitmq credentials, and user permissions.
 
 ## Configuration
 
